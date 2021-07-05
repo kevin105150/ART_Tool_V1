@@ -60,15 +60,15 @@ def Load_Model(filename, model, optimizer):
 print("Please select model (1:GoogLeNet, 2:VGG19, 3:ResNeXt101):")
 model_select = int(input())
 
-if model_select == 0:
+if model_select == 1:
     model = googlenet.GoogLeNet()
     text = 'GoogLeNet_'
     print('Use GoogLeNet')
-elif model_select == 1:
+elif model_select == 2:
     model = VGG.vgg19()
     text = 'VGG19_'
     print('Use VGG19')
-elif model_select == 2:
+elif model_select == 3:
     model = ResNet.resnext101_32x8d()
     text = 'ResNeXt101_'
     print('Use ResNeXt101')
